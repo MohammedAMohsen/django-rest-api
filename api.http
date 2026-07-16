@@ -1,0 +1,95 @@
+GET http://127.0.0.1:8000/products/ HTTP/1.1
+
+###
+
+GET http://127.0.0.1:8000/products/2/ HTTP/1.1
+
+###
+DELETE http://127.0.0.1:8000/products/3/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgzNDU2NDYyLCJpYXQiOjE3ODM0NTYxNjIsImp0aSI6IjcwMDM1ZjNlM2UwYjQ3ZDhiNGNhNjUwY2U0NjM3Yjc4IiwidXNlcl9pZCI6IjEifQ.8vGfjO7rxfxFy5ZtcBy5xvhgwGr0gbsUPFLdZ9v1ZAo
+
+###
+
+PUT http://127.0.0.1:8000/products/2/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgzNDU2OTM1LCJpYXQiOjE3ODM0NTY2MzUsImp0aSI6ImIxOGE5ZDBhN2JlODQ3NWQ5Y2NkMmI1MWExOGIyNGIxIiwidXNlcl9pZCI6IjEifQ.MYYnppBVSFBRhXjPD7ZcJCwGibTu5HKmiYt7Vcp7f9c
+
+{
+    "name": "Labtop HP",
+    "description": "New HP Probook labtop :)",
+    "price": "2500.00",
+    "stock": 4
+}
+
+###
+
+POST http://127.0.0.1:8000/products/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgzNDQzMjQ4LCJpYXQiOjE3ODM0NDI5NDgsImp0aSI6ImFkZGNlMDBhZmE0ZTQzNGFhYmVmMmNiNDBjM2Y5ZWY1IiwidXNlcl9pZCI6IjEifQ.KvX2a1j0gI1tzLSMMmWwDYgm58XP2RZBxMQJvbbjxfo
+
+{
+    "name": "Enter the Wu-Tang (36 Chambers)",
+    "description": "Dolorum ipsum aut provident officia,",
+    "price": "17.99",
+    "stock": 2
+}
+
+###
+
+GET http://127.0.0.1:8000/user-orders/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgzNDQ0NTA2LCJpYXQiOjE3ODM0NDQyMDYsImp0aSI6Ijc1ZWUxNjIwZjMyYTRhMWM4NTZkMDVhZTljMDA4MDllIiwidXNlcl9pZCI6IjEifQ.7Ntb_s-Q4gTRD2reoARuGMBtb57KRO7MIhsA6ah3-m8
+
+###
+
+POST http://127.0.0.1:8000/api/token/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "admin",
+    "password": "test"
+}
+
+###
+
+POST http://127.0.0.1:8000/api/token/refresh/ HTTP/1.1
+Content-Type: application/json
+
+{
+    "refresh": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoicmVmcmVzaCIsImV4cCI6MTc4MzUyOTM0OCwiaWF0IjoxNzgzNDQyOTQ4LCJqdGkiOiJmYWIyMWQxNjMyMTc0MWE3OGQzMDRkMDY0MGQxMjY4YiIsInVzZXJfaWQiOiIxIn0.pnsEoYGMs4ByuThGTQw1J8sGG-nAJtLWW5koQNAw3Yc"
+}
+
+
+###
+
+
+GET http://127.0.0.1:8000/orders/ HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0MDY3NDkxLCJpYXQiOjE3ODQwNjM4OTEsImp0aSI6IjIwYTg2M2JiM2ZkMzRlOThhYmY0N2FmMTE4MDdkMWQ1IiwidXNlcl9pZCI6IjEifQ.1Iq5Jvogjz8rf0XmL-1_q2eNEREWuXYwRESdfoml3qE
+
+
+###
+
+GET http://127.0.0.1:8000/products/info HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzg0MDY3NDI0LCJpYXQiOjE3ODQwNjM4MjQsImp0aSI6IjlmMmYzYjQ5M2U5YjQ3MDFiN2Q4NWMxODllYjYxZGViIiwidXNlcl9pZCI6IjEifQ.yPpb5WnBhVWwHZO1-oQg_Amlu0pqAEU_aVjXXY-9L3A
+
+
+### 
+
+
+POST http://127.0.0.1:8000/orders/ HTTP/1.1
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0b2tlbl90eXBlIjoiYWNjZXNzIiwiZXhwIjoxNzgzODQ1MjY3LCJpYXQiOjE3ODM4NDQ5NjcsImp0aSI6IjhiMjFiYmI1ZmEyOTRlNGY4YTdlNzBjZDQxZWRlNjJmIiwidXNlcl9pZCI6IjIifQ.8AM8X18UjX2KvyvwbzM896G7uhWEP9b33m7K0UNEOy4
+
+{
+    "status": "Pending",
+    "user": 2,
+    "items": [
+        {
+            "product": 2,
+            "quantity": 2
+        },
+        {
+            "product": 3,
+            "quantity":1
+        }
+    ]
+}
