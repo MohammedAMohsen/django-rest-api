@@ -6,7 +6,6 @@
 ![JWT](https://img.shields.io/badge/JWT-SimpleJWT-orange)
 ![Redis](https://img.shields.io/badge/Redis-Latest-red?logo=redis)
 ![Celery](https://img.shields.io/badge/Celery-Latest-brightgreen?logo=celery)
-![Docker](https://img.shields.io/badge/Docker-Latest-blue?logo=docker)
 ![SQLite](https://img.shields.io/badge/SQLite-Development-blue?logo=sqlite)
 ![OpenAPI](https://img.shields.io/badge/OpenAPI-3.x-success)
 ![Swagger](https://img.shields.io/badge/Swagger-UI-green)
@@ -305,7 +304,6 @@ Project includes several backend optimization techniques:
 - SimpleJWT
 - Redis
 - Celery
-- Docker
 - drf-spectacular
 - django-filter
 - SQLite
